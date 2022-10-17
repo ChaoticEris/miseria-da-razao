@@ -5,7 +5,6 @@ import moment from 'moment';
 import Link from "next/link";
 
 const PostDetail = ({ post }) => {
-    console.log(post.conteudo.raw.children)
     const getContentFragment = (index, text, obj, type) => {
         let modifiedText = text;
 
