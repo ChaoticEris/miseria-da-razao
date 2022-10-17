@@ -1,8 +1,12 @@
 import React from 'react';
-import moment from "moment/moment";
 
-const PostDetail = ({post}) => {
-    const getContentFragment = (index, text, children, obj, type) => {
+import moment from 'moment';
+
+import Link from "next/link";
+
+const PostDetail = ({ post }) => {
+    console.log(post.conteudo.raw.children)
+    const getContentFragment = (index, text, obj, type) => {
         let modifiedText = text;
 
         if (obj) {
@@ -37,7 +41,9 @@ const PostDetail = ({post}) => {
                     />
                 );
             case 'block-quote':
-                return <blockquote key={index}>{obj.children.map((item, itemIndex) => <React.Fragment key={itemIndex}>{getContentFragment(itemIndex, item.text, item.children, item)}</React.Fragment>)}</blockquote>;
+                return <blockquote key={index} className="mb-8 italic">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</blockquote>
+            case 'link':
+                return <a key={index} href={obj.href} className="italic underline">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</a>
             default:
                 return modifiedText;
         }
@@ -64,9 +70,9 @@ const PostDetail = ({post}) => {
                 </div>
                 <h1 className="mb-8 text-3xl font-semibold">{post.titulo}</h1>
                 {post.conteudo.raw.children.map((typeObj, index) => {
-                    const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item.children, item))
+                    const children = typeObj.children.map((item, itemindex) => getContentFragment(itemindex, item.text, item));
 
-                    return getContentFragment(index, children, children, typeObj, typeObj.type)
+                    return getContentFragment(index, children, typeObj, typeObj.type);
                 })}
             </div>
         </div>
