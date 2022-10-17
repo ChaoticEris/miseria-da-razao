@@ -12,8 +12,8 @@ const Header = () => {
     }, []);
 
     return (
-        <div className="container mx-auto px-10 mb-8">
-            <div className="border-b w-full inline-block border-blue-400 py-8">
+        <div className="mx-auto px-10 mb-8 bg-red-800">
+            <div className="border-b w-full inline-block border-black py-8">
                 <img src="https://cdn-images-1.medium.com/max/600/1*0bahf7NKTyuD_5h0vW-LUA@2x.png" alt="Logo do site" className="h-16 w-16 float-left object-cover mr-8"/>
                 <div className="md:float-left block">
                     <Link href="/">
