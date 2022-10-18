@@ -29,7 +29,9 @@ const PostDetail = ({ post }) => {
                 </div>
                 <h1 className="mb-8 text-3xl font-semibold">{post.titulo}</h1>
                 <React.Fragment>
-                    <RichText content={post.conteudo.raw.children}/>
+                    <div className="prose prose-base">
+                        <RichText content={post.conteudo.raw.children} />
+                    </div>
                 </React.Fragment>
             </div>
         </div>
