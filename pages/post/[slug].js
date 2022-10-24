@@ -13,7 +13,7 @@ const PostDetails = ({post}) => {
                 <meta property="og:description" content={post.excerpt}/>
                 <meta property="og:image" content={post.featuredImage.url}/>
                 <meta property="og:title" content={post.titulo}/>
-                <meta name="twitter:card" content={post.excerpt}/>
+                <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@miseriadarazao"/>
                 <meta name="twitter:creator" content="@eris_gothichaos"/>
             </Head>
