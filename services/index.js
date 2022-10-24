@@ -5,7 +5,7 @@ const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT
 export const getPosts = async () => {
     const query = gql`
         query MyQuery {
-            postsConnection (orderBy: publishedAt_DESC) {
+            postsConnection (orderBy: createdAt_DESC) {
                 edges {
                     node {
                         autor {
@@ -16,7 +16,7 @@ export const getPosts = async () => {
                                 url
                             }
                         }
-                        publishedAt
+                        createdAt
                         slug
                         titulo
                         featuredImage {
@@ -50,7 +50,7 @@ export const getPostDetails = async (slug) => {
                                 url
                             }
                         }
-                        publishedAt
+                        createdAt
                         slug
                         titulo
                         featuredImage {
@@ -84,7 +84,7 @@ export const getRecentPosts = async () => {
                featuredImage {
                    url
                }
-               publishedAt
+               createdAt
                slug
            }
        }
@@ -179,7 +179,7 @@ export const getFeaturedPosts = async () => {
                 }
                 titulo
                 slug
-                publishedAt
+                createdAt
             }
         }
     `;
