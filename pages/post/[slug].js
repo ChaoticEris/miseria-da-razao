@@ -10,7 +10,7 @@ const PostDetails = ({post}) => {
         <div>
             <Head>
                 <title>MDR | {post.titulo}</title>
-                <meta name="description" content={post.excerpt}/>
+                <meta property="og:description" content={post.excerpt}/>
                 <meta property="og:image" content={post.featuredImage.url}/>
                 <meta property="og:title" content={post.titulo}/>
                 <meta name="twitter:card" content={post.excerpt}/>
