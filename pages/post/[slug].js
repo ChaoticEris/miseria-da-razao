@@ -11,7 +11,8 @@ const PostDetails = ({post}) => {
             <Head>
                 <title>MDR | {post.titulo}</title>
                 <meta name="description" content={post.excerpt}/>
-                <meta name="og:image" content={post.featuredImage.url}/>
+                <meta property="og:image" content={post.featuredImage.url}/>
+                <meta name="twitter:card" content={post.excerpt}/>
             </Head>
             <div className="container mx-auto px-10 mb-8">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
