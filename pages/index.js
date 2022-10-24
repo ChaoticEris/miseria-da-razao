@@ -9,6 +9,8 @@ export default function Home({posts}) {
       <Head>
         <title>Miséria da Razão</title>
         <link rel="icon" href="/favicon.ico" />
+          <meta name="og:image" content="https://cdn-images-1.medium.com/max/600/1*0bahf7NKTyuD_5h0vW-LUA@2x.png"/>
+          <meta name="description" content="Miséria da Razão"/>
       </Head>
       <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
