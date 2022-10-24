@@ -33,3 +33,10 @@ export async function getStaticProps() {
         props: {posts}
     }
 }
+
+export async function getServersideProps() {
+    const posts = (await getPosts() || [])
+    return {
+        props: {posts}
+    }
+}
