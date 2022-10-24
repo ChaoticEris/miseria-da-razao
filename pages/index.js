@@ -13,6 +13,8 @@ export default function Home({posts}) {
           <meta property="og:title" content="Miséria da Razão"/>
           <meta property="og:description" content="Revista Marxista crítica para melhor entender a realidade em que estamos inseridos e transformá-la radicalmente."/>
           <meta name="twitter:card" content="summary"/>
+          <meta name="twitter:creator" content="@eris_gothichaos"/>
+          <meta name="twitter:site" content="@miseriadarazao"/>
       </Head>
       <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
