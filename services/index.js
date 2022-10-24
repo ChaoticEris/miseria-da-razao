@@ -16,7 +16,7 @@ export const getPosts = async () => {
                                 url
                             }
                         }
-                        createdAt
+                        publishedAt
                         slug
                         titulo
                         featuredImage {
@@ -50,7 +50,7 @@ export const getPostDetails = async (slug) => {
                                 url
                             }
                         }
-                        createdAt
+                        publishedAt
                         slug
                         titulo
                         featuredImage {
@@ -84,7 +84,7 @@ export const getRecentPosts = async () => {
                featuredImage {
                    url
                }
-               createdAt
+               publishedAt
                slug
            }
        }
@@ -179,7 +179,7 @@ export const getFeaturedPosts = async () => {
                 }
                 titulo
                 slug
-                createdAt
+                publishedAt
             }
         }
     `;
