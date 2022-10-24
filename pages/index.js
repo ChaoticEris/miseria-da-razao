@@ -10,6 +10,7 @@ export default function Home({posts}) {
         <title>Miséria da Razão</title>
         <link rel="icon" href="/favicon.ico" />
           <meta property="og:image" content="https://cdn-images-1.medium.com/max/600/1*0bahf7NKTyuD_5h0vW-LUA@2x.png"/>
+          <meta property="og:title" content="Miséria da Razão"/>
           <meta property="og:description" content="Revista Marxista crítica para melhor entender a realidade em que estamos inseridos e transformá-la radicalmente."/>
           <meta name="twitter:card" content="summary"/>
       </Head>
