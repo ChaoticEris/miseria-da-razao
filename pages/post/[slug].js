@@ -15,7 +15,7 @@ const PostDetails = ({post}) => {
                 <meta property="og:title" content={post.titulo}/>
                 <meta name="twitter:card" content={post.excerpt}/>
                 <meta name="twitter:site" content="@miseriadarazao"/>
-                <meta/>
+                <meta name="twitter:creator" content="@eris_gothichaos"/>
             </Head>
             <div className="container mx-auto px-10 mb-8">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
