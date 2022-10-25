@@ -5,7 +5,7 @@ import {FeaturedPosts} from "../sections";
 
 export default function Home({posts}) {
   return (
-    <div className="container mx-auto px-10 mb-8">
+    <div className="container mx-auto px-10 w-full mb-8 box-border xl:px-[12%]">
       <Head>
         <title>Miséria da Razão</title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,6 +15,7 @@ export default function Home({posts}) {
           <meta name="twitter:card" content="summary"/>
           <meta name="twitter:creator" content="@eris_gothichaos"/>
           <meta name="twitter:site" content="@miseriadarazao"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
       <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
